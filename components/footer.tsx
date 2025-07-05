@@ -13,7 +13,7 @@ export default function Footer() {
                 <span className="text-white font-bold text-sm">NCS</span>
               </div> */}
               <img
-                src="/NCS_logo-01.jpg"
+                src="/native-consult-v0/NCS_logo-01.jpg"
                 alt="Logo"
                 className="h-12 w-12 rounded-lg"
               />

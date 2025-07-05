@@ -120,25 +120,25 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-sky-600" />
-                  <span className="text-neutral-gray-700">
+                  <span className="text-neutral-700">
                     AWS GovCloud deployment capabilities
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-sky-600" />
-                  <span className="text-neutral-gray-700">
+                  <span className="text-neutral-700">
                     IRS Publication 1075 compliance adherence
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-sky-600" />
-                  <span className="text-neutral-gray-700">
+                  <span className="text-neutral-700">
                     FISMA and FedRAMP security standards
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-sky-600" />
-                  <span className="text-neutral-gray-700">
+                  <span className="text-neutral-700">
                     End-to-end encryption and data protection
                   </span>
                 </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
           <Link href="/contact">
             <Button
               size="lg"
-              className="bg-white text-sky-600 hover:bg-neutral-gray-100 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-sky-600 hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105"
             >
               Contact Us Today
               <ArrowRight className="ml-2 h-5 w-5" />

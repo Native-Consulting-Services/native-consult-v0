@@ -24,7 +24,11 @@ export default function Header() {
         <div className="flex h-16 justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <img src="/NCS_logo-01.jpg" alt="Logo" className="h-8 w-8" />
+              <img
+                src="/native-consult-v0/NCS_logo-01.jpg"
+                alt="Logo"
+                className="h-8 w-8"
+              />
               <span className="text-xl font-bold text-neutral-black">
                 Native Consulting Services
               </span>
