@@ -102,7 +102,7 @@ export default function Footer() {
               <div className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5 text-primary-teal" />
                 <span className="text-neutral-gray-300">
-                  Covington, Louisiana
+                  New Orleans, Louisiana
                 </span>
               </div>
             </div>
