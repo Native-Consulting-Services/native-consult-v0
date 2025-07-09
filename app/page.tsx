@@ -87,6 +87,11 @@ export default function HomePage() {
                 description:
                   "Secure online commerce solutions with integrated payment processing and inventory management.",
               },
+              {
+                title: "ERP Solutions",
+                description:
+                  "Enterprise resource planning systems to manage your operations efficiently.",
+              },
             ].map((service, index) => (
               <div
                 key={index}

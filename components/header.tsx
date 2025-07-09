@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import NCS_logo from "@/assets/NCS_logo-01.jpg";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,11 +26,7 @@ export default function Header() {
         <div className="flex h-16 justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <img
-                src="/native-consult-v0/NCS_logo-01.jpg"
-                alt="Logo"
-                className="h-8 w-8"
-              />
+              <Image src={NCS_logo} alt="Logo" width={32} height={32} className="h-8 w-8" />
               <span className="text-xl font-bold text-neutral-black">
                 Native Consulting Services
               </span>

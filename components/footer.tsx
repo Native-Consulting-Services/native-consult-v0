@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Linkedin, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
+import NCS_logo from "@/assets/NCS_logo-01.jpg";
 
 export default function Footer() {
   return (
@@ -9,12 +11,11 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              {/* <div className="h-8 w-8 bg-gradient-to-br from-primary-teal to-primary-sky-blue rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">NCS</span>
-              </div> */}
-              <img
-                src="/native-consult-v0/NCS_logo-01.jpg"
+              <Image
+                src={NCS_logo}
                 alt="Logo"
+                width={48}
+                height={48}
                 className="h-12 w-12 rounded-lg"
               />
               <span className="text-lg font-bold">
@@ -60,10 +61,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/case-studies"
+                  href="/portfolio"
                   className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
                 >
-                  Case Studies
+                  Portfolio
                 </Link>
               </li>
               <li>
@@ -84,10 +85,10 @@ export default function Footer() {
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-primary-teal" />
                 <a
-                  href="mailto:info@nativeconsultingservices.com"
+                  href="mailto:info@nativeconsult.io"
                   className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
                 >
-                  info@nativeconsultingservices.com
+                  info@nativeconsult.io
                 </a>
               </div>
               <div className="flex items-center space-x-2">
@@ -115,7 +116,8 @@ export default function Footer() {
               © {new Date().getFullYear()} Native Consulting Services. All
               rights reserved.
             </p>
-            <div className="mt-4 md:mt-0 flex space-x-6">
+            {/* TODO: Uncomment when privacy policy and terms of service are ready */}
+            {/* <div className="mt-4 md:mt-0 flex space-x-6">
               <a
                 href="#"
                 className="text-neutral-gray-400 hover:text-primary-teal transition-colors"
@@ -128,7 +130,7 @@ export default function Footer() {
               >
                 Terms of Service
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
