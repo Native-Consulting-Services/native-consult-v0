@@ -186,7 +186,7 @@ export default function PortfolioPage() {
                         alt={project.title}
                         width={600}
                         height={400}
-                        className="w-full h-64 md:h-80 object-cover rounded-lg"
+                        className="w-full h-auto rounded-lg"
                       />
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-br from-sky-600/20 to-sky-400/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
