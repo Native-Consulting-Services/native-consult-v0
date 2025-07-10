@@ -37,14 +37,6 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/"
-                  className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/about"
                   className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
                 >
@@ -94,8 +86,10 @@ export default function Footer() {
               <div className="flex items-center space-x-2">
                 <Linkedin className="h-5 w-5 text-primary-teal" />
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/native-consulting-services/"
                   className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn Profile
                 </a>

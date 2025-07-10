@@ -18,7 +18,7 @@ export default function HomePage() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-white text-sky-600 hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105"
+                className="bg-white text-sky-600 hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105 cursor-pointer"
               >
                 Get Started Today
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -158,10 +158,10 @@ export default function HomePage() {
                   Built with security as the foundation
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-sky-600 to-sky-400 p-6 rounded-lg text-white text-center">
+              <div className="bg-gradient-to-br from-sky-400 to-sky-600 p-6 rounded-lg text-white text-center">
                 <Cloud className="h-12 w-12 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Cloud Ready</h3>
-                <p className="text-sm text-sky-100">
+                <p className="text-sm text-teal-100">
                   AWS GovCloud certified deployments
                 </p>
               </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
           <Link href="/contact">
             <Button
               size="lg"
-              className="bg-white text-sky-600 hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-sky-600 hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105 cursor-pointer"
             >
               Contact Us Today
               <ArrowRight className="ml-2 h-5 w-5" />

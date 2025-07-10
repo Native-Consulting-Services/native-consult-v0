@@ -13,11 +13,10 @@ export default function Header() {
   const pathname = usePathname();
 
   const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "#" },
-    { name: "Services", href: "#" },
-    { name: "Case Studies", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -26,7 +25,13 @@ export default function Header() {
         <div className="flex h-16 justify-between items-center">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <Image src={NCS_logo} alt="Logo" width={32} height={32} className="h-8 w-8" />
+              <Image
+                src={NCS_logo}
+                alt="Logo"
+                width={32}
+                height={32}
+                className="h-8 w-8"
+              />
               <span className="text-xl font-bold text-neutral-black">
                 Native Consulting Services
               </span>
@@ -42,7 +47,7 @@ export default function Header() {
                   href={item.href}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     pathname === item.href
-                      ? "bg-primary-sky-600 text-white"
+                      ? "bg-gradient-to-br from-sky-600 to-sky-400 text-white"
                       : "text-neutral-gray-700 hover:bg-sky-600 hover:text-white"
                   }`}
                 >
