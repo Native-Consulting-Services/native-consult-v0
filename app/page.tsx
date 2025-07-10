@@ -18,7 +18,7 @@ export default function HomePage() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-white text-sky-600 hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                className="bg-white text-sky-800 hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105 cursor-pointer"
               >
                 Get Started Today
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -183,7 +183,7 @@ export default function HomePage() {
           <Link href="/contact">
             <Button
               size="lg"
-              className="bg-white text-sky-600 hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105 cursor-pointer"
+              className="bg-white text-sky-800 hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105 cursor-pointer"
             >
               Contact Us Today
               <ArrowRight className="ml-2 h-5 w-5" />

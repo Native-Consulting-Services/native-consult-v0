@@ -30,7 +30,7 @@ export default function Header() {
                 alt="Logo"
                 width={32}
                 height={32}
-                className="h-8 w-8"
+                className="h-8 w-auto"
               />
               <span className="text-xl font-bold text-neutral-black">
                 Native Consulting Services
@@ -65,6 +65,7 @@ export default function Header() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-neutral-gray-700"
             >
+              <span className="sr-only">Open main menu</span>
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
               ) : (
