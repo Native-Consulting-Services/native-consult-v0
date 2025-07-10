@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import NCS_logo from "@/assets/NCS_logo-01.jpg";
+import NCS_logo from "@/assets/NCS_logo-01.webp";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

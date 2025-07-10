@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Linkedin, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
-import NCS_logo from "@/assets/NCS_logo-01.jpg";
+import NCS_logo from "@/assets/NCS_logo-01.webp";
 
 export default function Footer() {
   return (
