@@ -25,6 +25,24 @@ export const metadata: Metadata = {
   description:
     "Native Consulting Services specializes in secure, custom software solutions for Tribal Governments and organizations requiring high compliance standards.",
   viewport: "width=device-width, initial-scale=1",
+  openGraph: {
+    title:
+      "Native Consulting Services - Your Native Partner In Software Solutions",
+    description:
+      "Native Consulting Services specializes in secure, custom software solutions for Tribal Governments and organizations requiring high compliance standards.",
+    url: "https://nativeconsult.io",
+    siteName: "Native Consulting Services",
+    images: [
+      {
+        url: "/meta.webp",
+        width: 1200,
+        height: 630,
+        alt: "Native Consulting Services - Custom Software Solutions",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
   other: {
     "color-scheme": "light",
   },
@@ -43,7 +61,7 @@ export default function RootLayout({
           body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
           .header-skeleton { height: 64px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
         `}</style>
-        
+
         {/* Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -51,10 +69,10 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin=""
         />
-        
+
         {/* Preload critical resources */}
         <link rel="preload" href="/favicon.ico" as="image" />
-        
+
         {/* DNS prefetch for other potential external resources */}
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
