@@ -34,10 +34,11 @@ export const metadata: Metadata = {
     siteName: "Native Consulting Services",
     images: [
       {
-        url: "/meta.webp",
+        url: "https://nativeconsult.io/meta.webp",
         width: 1200,
         height: 630,
-        alt: "Native Consulting Services - Custom Software Solutions",
+        alt: "Native Consulting Services - Your Native Partner In Software Solutions",
+        type: "image/webp",
       },
     ],
     locale: "en_US",
@@ -72,6 +73,7 @@ export default function RootLayout({
 
         {/* Preload critical resources */}
         <link rel="preload" href="/favicon.ico" as="image" />
+        <link rel="preload" href="/meta.webp" as="image" />
 
         {/* DNS prefetch for other potential external resources */}
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
