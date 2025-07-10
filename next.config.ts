@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // Performance optimizations
+  experimental: {
+    optimizeCss: true,
+    optimizeServerReact: true,
+  },
+  // Compiler optimizations
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
   // Remove basePath when using custom domain
   // basePath: '/native-consult-v0', // Only needed for GitHub Pages without custom domain
 };
