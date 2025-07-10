@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  // Remove basePath when using custom domain
+  // basePath: '/native-consult-v0', // Only needed for GitHub Pages without custom domain
 };
 
 export default nextConfig;
