@@ -153,7 +153,7 @@ export default function PackagesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 md:gap-8">
             {packages.map((pkg, index) => (
               <div
                 key={pkg.name}
