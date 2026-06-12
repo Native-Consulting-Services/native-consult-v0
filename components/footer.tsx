@@ -102,10 +102,14 @@ export default function Footer() {
                   LinkedIn Profile
                 </a>
               </div>
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-5 w-5 text-primary-teal" />
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-5 w-5 text-primary-teal mt-0.5" />
                 <span className="text-neutral-gray-300">
-                  New Orleans, Louisiana
+                  Native Consulting Services, LLC
+                  <br />
+                  250 Holiday Blvd.
+                  <br />
+                  Covington, LA 70433
                 </span>
               </div>
             </div>

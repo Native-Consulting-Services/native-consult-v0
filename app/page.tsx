@@ -1,6 +1,16 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Shield, Cloud, CheckCircle, ArrowRight } from "lucide-react";
+import {
+  Shield,
+  Cloud,
+  CheckCircle,
+  ArrowRight,
+  Rabbit,
+  Sparkles,
+  Phone,
+  KeyRound,
+  ArrowLeftRight,
+} from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -56,47 +66,57 @@ export default function HomePage() {
               Our Core Services
             </h2>
             <p className="text-lg text-neutral-600">
-              Comprehensive software solutions tailored to your specific needs
+              From custom applications to AI-driven automation, built on
+              sovereign cloud infrastructure
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Web App Development",
+                icon: Rabbit,
+                title: "Application Development & Chukfi CMS",
                 description:
-                  "Custom web applications built with modern frameworks and security-first architecture.",
+                  "Custom web, mobile, CRM, e-commerce, and ERP solutions, powered by Chukfi CMS — our own open-source content platform.",
               },
               {
-                title: "CMS Solutions",
+                icon: Sparkles,
+                title: "AI & Intelligent Automation",
                 description:
-                  "Content management systems designed for easy administration and secure content delivery.",
+                  "AI-powered document scanning, compliance checks, vision analysis, and agent-driven workflow automation.",
               },
               {
-                title: "Mobile App Development",
+                icon: Phone,
+                title: "Conversational Voice AI",
                 description:
-                  "Native and cross-platform mobile applications for iOS and Android devices.",
+                  "AI phone agents that hold real conversations to handle intake, answer questions, and route requests.",
               },
               {
-                title: "CRM Development",
+                icon: Cloud,
+                title: "Cloud Infrastructure & Data Sovereignty",
                 description:
-                  "Customer relationship management systems to streamline your client interactions.",
+                  "AWS-based infrastructure with encryption keys you control, Multi-AZ databases, and cross-region backups.",
               },
               {
-                title: "E-Commerce Platforms",
+                icon: KeyRound,
+                title: "Identity, Access & Compliance",
                 description:
-                  "Secure online commerce solutions with integrated payment processing and inventory management.",
+                  "SSO, MFA, role-based access control, and audit logging aligned to standards like IRS Pub 1075 and FISMA.",
               },
               {
-                title: "ERP Solutions",
+                icon: ArrowLeftRight,
+                title: "Data Migration & Integration",
                 description:
-                  "Enterprise resource planning systems to manage your operations efficiently.",
+                  "Migrating legacy systems into modern, queryable databases with custom analytics dashboards.",
               },
             ].map((service, index) => (
               <div
                 key={index}
                 className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
               >
+                <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                  <service.icon className="h-6 w-6 text-white" />
+                </div>
                 <h3 className="text-xl font-semibold text-black mb-3">
                   {service.title}
                 </h3>
@@ -126,7 +146,8 @@ export default function HomePage() {
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-sky-600" />
                   <span className="text-neutral-700">
-                    AWS GovCloud deployment capabilities
+                    Sovereign cloud infrastructure with encryption keys you
+                    control
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -138,7 +159,8 @@ export default function HomePage() {
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-sky-600" />
                   <span className="text-neutral-700">
-                    FISMA and FedRAMP security standards
+                    FISMA security standards, with AWS GovCloud available when
+                    required
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -160,9 +182,11 @@ export default function HomePage() {
               </div>
               <div className="bg-gradient-to-br from-sky-400 to-sky-600 p-6 rounded-lg text-white text-center">
                 <Cloud className="h-12 w-12 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Cloud Ready</h3>
+                <h3 className="text-lg font-semibold mb-2">
+                  Sovereign Cloud
+                </h3>
                 <p className="text-sm text-teal-100">
-                  AWS GovCloud certified deployments
+                  AWS-based deployments built around data ownership
                 </p>
               </div>
             </div>

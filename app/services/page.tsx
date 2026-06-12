@@ -1,86 +1,231 @@
 import {
   Code,
-  Database,
   Smartphone,
   Users,
   ShoppingCart,
+  Database,
+  Rabbit,
+  FileSearch,
+  ScanEye,
+  ShieldAlert,
+  Workflow,
+  Phone,
+  AudioLines,
+  BarChart3,
+  Cloud,
+  Lock,
+  Globe,
+  RefreshCw,
+  KeyRound,
+  ShieldCheck,
+  UserCog,
+  ClipboardCheck,
+  ArrowLeftRight,
+  Layers,
+  Bell,
   Shield,
+  Sparkles,
 } from "lucide-react";
 
 export default function ServicesPage() {
-  const services = [
+  const categories = [
     {
-      icon: Code,
-      title: "Web App Development",
+      title: "Application Development",
       description:
-        "We specialize in developing custom web applications using modern frameworks and technologies. Our development process emphasizes security-first architecture, ensuring that every application meets stringent compliance requirements while delivering exceptional user experiences. We implement robust authentication systems, encrypted data transmission, and comprehensive audit trails to protect sensitive information and maintain regulatory compliance.",
-      keyBenefits: [
-        "Enhanced security and compliance",
-        "Improved operational efficiency",
-        "Scalable and maintainable architecture",
-        "24/7 support and maintenance",
+        "Custom-built software for the systems your organization runs on every day — from a single department portal to a full suite of integrated tools.",
+      items: [
+        {
+          icon: Code,
+          title: "Web App Development",
+          description:
+            "Custom web applications built with modern frameworks (Next.js, React, TypeScript), security-first architecture, and audit-ready compliance from day one.",
+        },
+        {
+          icon: Smartphone,
+          title: "Mobile App Development",
+          description:
+            "Native and cross-platform apps for iOS and Android (React Native) with offline support, push notifications, and secure document upload from a shared codebase.",
+        },
+        {
+          icon: Users,
+          title: "CRM Development",
+          description:
+            "Tailored client and case-management systems with automated workflows, communication tracking, and reporting built around how your team actually works.",
+        },
+        {
+          icon: ShoppingCart,
+          title: "E-Commerce Platforms",
+          description:
+            "Secure online stores and payment portals with Stripe integration, PCI-compliant checkout, fraud protection, and payment reconciliation reporting.",
+        },
+        {
+          icon: Database,
+          title: "ERP Solutions",
+          description:
+            "Integrated systems connecting finance, HR, and operations with real-time visibility, process automation, and role-based access control.",
+        },
       ],
     },
     {
-      icon: Database,
-      title: "CMS Solutions",
+      title: "AI & Intelligent Automation",
       description:
-        "Our content management systems are designed for organizations that require secure, scalable, and user-friendly content administration. We build CMS platforms that enable easy content updates while maintaining strict access controls and version management. Our solutions include automated backup systems, role-based permissions, and compliance reporting features that ensure your content remains secure and accessible to authorized users only.",
-      keyBenefits: [
-        "User-friendly content management",
-        "Role-based access control",
-        "Automated backups and versioning",
-        "Compliance with content security standards",
+        "Practical AI built into your workflows — not a chatbot bolted on the side, but automation that handles the repetitive work your staff shouldn't have to.",
+      items: [
+        {
+          icon: FileSearch,
+          title: "AI Document & Compliance Scanning",
+          description:
+            "AI-powered parsing of applications, forms, and compliance documents — automatically extracting data and checking it against the rules that matter to your program.",
+        },
+        {
+          icon: ScanEye,
+          title: "AI Vision & Image Analysis",
+          description:
+            "Automatic photo tagging, severity assessment, and description generation for inspections, maintenance reports, and media libraries.",
+        },
+        {
+          icon: ShieldAlert,
+          title: "Content Moderation",
+          description:
+            "AI-reviewed public submissions with stored reasoning, flagging anything that needs a human look before it goes live.",
+        },
+        {
+          icon: Workflow,
+          title: "AI Agent Orchestration",
+          description:
+            "Custom automation pipelines that connect intake, document processing, and notifications into a single hands-off workflow, built and tuned for your processes.",
+        },
       ],
     },
     {
-      icon: Smartphone,
-      title: "Mobile App Development",
+      title: "Conversational Voice AI",
       description:
-        "We develop native and cross-platform mobile applications for iOS and Android devices, with a focus on security and performance. Our mobile solutions incorporate device-level encryption, secure authentication protocols, and offline capability for critical functions. We ensure that all mobile applications comply with platform security guidelines and organizational policies, providing seamless user experiences without compromising data protection.",
-      keyBenefits: [
-        "Native and cross-platform solutions",
-        "Device-level encryption",
-        "Secure authentication protocols",
-        "Offline capabilities for critical functions",
+        "AI phone agents that hold real conversations — handling intake, answering questions, and routing requests without a traditional phone tree.",
+      items: [
+        {
+          icon: Phone,
+          title: "Conversational Phone Agents",
+          description:
+            "AI-powered voice agents that hold real conversations to handle intake calls, answer questions, and route requests to the right place.",
+        },
+        {
+          icon: AudioLines,
+          title: "Real-Time Speech Processing",
+          description:
+            "Live speech-to-text and text-to-speech for natural, low-latency phone interactions.",
+        },
+        {
+          icon: BarChart3,
+          title: "Call Analytics",
+          description:
+            "Call metadata and outcome logging feeding directly into your dashboards.",
+        },
       ],
     },
     {
-      icon: Users,
-      title: "CRM Development",
+      title: "Cloud Infrastructure & Data Sovereignty",
       description:
-        "Our customer relationship management systems are tailored to help organizations manage client interactions efficiently while maintaining data privacy and security. We implement comprehensive contact management, communication tracking, and reporting capabilities that streamline operations and improve service delivery. Our CRM solutions include automated workflows, integration capabilities, and detailed analytics to support informed decision-making and enhanced client relationships.",
-      keyBenefits: [
-        "Streamlined client interactions",
-        "Automated workflows and integration",
-        "Detailed analytics and reporting",
-        "Enhanced client relationship management",
+        "Sovereign cloud infrastructure built around data ownership — your data stays where you control it, encrypted with keys you hold.",
+      items: [
+        {
+          icon: Cloud,
+          title: "Sovereign Cloud Architecture",
+          description:
+            "AWS-based infrastructure designed around data ownership, with your data kept in your region under encryption keys you control. AWS GovCloud is available as a deployment option when required.",
+        },
+        {
+          icon: Lock,
+          title: "Encrypted Staging & Media Anonymization",
+          description:
+            "Incoming documents and photos land in KMS-encrypted storage first, with GPS and device metadata scrubbed before anything is filed permanently.",
+        },
+        {
+          icon: Globe,
+          title: "CDN & DDoS Protection",
+          description:
+            "Content delivery and DDoS protection in front of every public-facing application.",
+        },
+        {
+          icon: RefreshCw,
+          title: "High Availability & Backup",
+          description:
+            "Multi-AZ databases and cross-region replication so your data survives an outage.",
+        },
       ],
     },
     {
-      icon: ShoppingCart,
-      title: "E-Commerce Platforms",
+      title: "Identity, Access & Compliance",
       description:
-        "We build secure online commerce solutions with integrated payment processing, inventory management, and order fulfillment systems. Our e-commerce platforms are designed to handle sensitive financial transactions with PCI DSS compliance and advanced fraud protection. We implement comprehensive product catalogs, customer account management, and detailed reporting systems that enable organizations to operate successful online businesses while maintaining the highest security standards.",
-      keyBenefits: [
-        "Secure payment processing",
-        "PCI DSS compliance",
-        "Advanced fraud protection",
-        "Comprehensive product and order management",
+        "Access controls and audit trails designed to satisfy your security team and your compliance requirements at the same time.",
+      items: [
+        {
+          icon: KeyRound,
+          title: "Single Sign-On",
+          description:
+            "Integrate with your existing Azure AD or other SAML/OIDC identity provider for staff access — no separate logins to manage.",
+        },
+        {
+          icon: ShieldCheck,
+          title: "Multi-Factor Authentication",
+          description:
+            "MFA enforced across every endpoint, staff and public-facing alike.",
+        },
+        {
+          icon: UserCog,
+          title: "Role-Based Access Control",
+          description:
+            "Fine-grained, multi-audience permissions — admins, staff, and external users each see exactly what they should.",
+        },
+        {
+          icon: ClipboardCheck,
+          title: "Audit Logging & Compliance Reporting",
+          description:
+            "Every action logged with full attribution, aligned to standards like IRS Publication 1075 and FISMA.",
+        },
       ],
     },
     {
-      icon: Code,
-      title: "ERP Solutions",
+      title: "Data Migration & Integration",
       description:
-        "Our enterprise resource planning systems are designed to integrate all facets of an organization’s operations, from finance and HR to supply chain management. We build ERP solutions that provide real-time data visibility, process automation, and compliance with industry regulations. Our systems include robust security features such as role-based access control, data encryption, and audit logging to ensure that sensitive organizational data is protected at all times.",
-      keyBenefits: [
-        "Integrated operations management",
-        "Real-time data visibility",
-        "Process automation",
-        "Compliance with industry regulations",
+        "Getting your data out of legacy systems and into something modern, queryable, and actually useful.",
+      items: [
+        {
+          icon: ArrowLeftRight,
+          title: "Legacy System Migration",
+          description:
+            "Extracting, deduplicating, and migrating data out of legacy systems, even ones with limited export options, into a modern database.",
+        },
+        {
+          icon: Layers,
+          title: "Database & Schema Design",
+          description:
+            "Relational data models designed to match how your programs actually operate, not a generic template.",
+        },
+        {
+          icon: Bell,
+          title: "Notifications",
+          description:
+            "Automated email and SMS notifications for status updates, alerts, and reminders.",
+        },
+        {
+          icon: BarChart3,
+          title: "Analytics Dashboards",
+          description:
+            "Custom reporting and KPI dashboards built into your admin tools, no separate BI subscription required.",
+        },
       ],
     },
+  ];
+
+  const chukfiCapabilities = [
+    "Config-as-code schemas with 16+ field types, including references and nested components",
+    "Full content lifecycle: draft, publish, version, rollback, schedule, archive",
+    "Media library with AI-generated alt text and metadata",
+    "Append-only audit log with full user attribution",
+    "HMAC-signed webhooks for real-time integrations",
+    "Multi-audience role-based access control (admin, staff, public)",
+    "REST API with 38+ endpoints for headless content delivery",
+    "Deployable on AWS (ECS Fargate, RDS, S3) or other infrastructure",
   ];
 
   return (
@@ -93,8 +238,9 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="text-xl md:text-2xl text-teal-100 max-w-3xl mx-auto">
-              Comprehensive software solutions designed with security,
-              compliance, and your success in mind.
+              From a single secure portal to AI-driven automation across your
+              whole organization — built with security, compliance, and your
+              success in mind.
             </p>
           </div>
         </div>
@@ -105,13 +251,13 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-              Secure Development Practices
+              Built for Range
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              Every service we provide is built on a foundation of
-              security-first development practices, ensuring compliance with the
-              most stringent regulatory requirements while delivering
-              exceptional functionality and user experience.
+              Whether you need a focused tool delivered in weeks or a
+              multi-system platform built over months, every project is built
+              on the same foundation of security-first development and
+              sovereign cloud infrastructure.
             </p>
           </div>
 
@@ -128,90 +274,115 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <Database className="h-12 w-12 text-sky-600 mx-auto mb-4" />
+              <Cloud className="h-12 w-12 text-sky-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-black mb-3">
-                Data Protection
+                Sovereign Cloud Infrastructure
               </h3>
               <p className="text-gray-600">
-                Advanced encryption, secure data storage, and comprehensive
-                backup systems protect your sensitive information at all times.
+                AWS-based infrastructure with encryption keys you control,
+                Multi-AZ databases, and cross-region backups built in from
+                the start.
               </p>
             </div>
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <Users className="h-12 w-12 text-sky-600 mx-auto mb-4" />
+              <Sparkles className="h-12 w-12 text-sky-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-black mb-3">
-                User-Centric Design
+                AI-Powered Automation
               </h3>
               <p className="text-gray-600">
-                Intuitive interfaces and streamlined workflows ensure that
-                security doesn't come at the expense of usability.
+                Document processing, vision analysis, and conversational
+                agents that take repetitive work off your team's plate.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Detailed Services */}
+      {/* Chukfi CMS Featured Section */}
+      <section className="py-16 bg-gradient-to-br from-sky-50 to-teal-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl shadow-xl border-2 border-sky-200 p-8 md:p-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center mb-6">
+                  <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
+                    <Rabbit className="h-8 w-8 text-white" />
+                  </div>
+                  <div>
+                    <span className="inline-block text-xs font-semibold uppercase tracking-wide text-sky-600 mb-1">
+                      NCS Open-Source Platform
+                    </span>
+                    <h3 className="text-2xl md:text-3xl font-bold text-black">
+                      Chukfi CMS
+                    </h3>
+                  </div>
+                </div>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  Chukfi CMS is NCS&apos;s own headless content management
+                  platform, built in Rust with PostgreSQL.{" "}
+                  <em>Chukfi</em> means &ldquo;rabbit&rdquo; in Choctaw.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Because we own and maintain Chukfi ourselves, there&apos;s
+                  no third-party vendor that can raise prices, deprecate
+                  features, or leave your project stranded. We extend it
+                  directly to fit your needs, and every project-specific
+                  configuration and data model is yours.
+                </p>
+              </div>
+
+              <div className="bg-gray-50 p-8 rounded-lg">
+                <h4 className="text-xl font-semibold text-black mb-4">
+                  Platform Capabilities
+                </h4>
+                <ul className="space-y-3">
+                  {chukfiCapabilities.map((capability, idx) => (
+                    <li key={idx} className="flex items-start">
+                      <div className="w-2 h-2 bg-sky-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-700 text-sm">
+                        {capability}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Categories */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? "lg:grid-flow-col-dense" : ""
-                }`}
-              >
-                <div className={`${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
-                  <div className="flex items-center mb-6">
-                    <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                      <service.icon className="h-8 w-8 text-white" />
-                    </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-black">
-                      {service.title}
-                    </h3>
-                  </div>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    {service.description}
+            {categories.map((category) => (
+              <div key={category.title}>
+                <div className="mb-8">
+                  <h3 className="text-2xl md:text-3xl font-bold text-black mb-3">
+                    {category.title}
+                  </h3>
+                  <p className="text-lg text-gray-600 max-w-3xl">
+                    {category.description}
                   </p>
                 </div>
 
-                <div
-                  className={`${
-                    index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""
-                  }`}
-                >
-                  <div className="bg-white p-8 rounded-lg shadow-lg">
-                    <h4 className="text-xl font-semibold text-black mb-4">
-                      Key Benefits
-                    </h4>
-                    <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-sky-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700">
-                          {service.keyBenefits[0]}
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-sky-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700">
-                          {service.keyBenefits[1]}
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-sky-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700">
-                          {service.keyBenefits[2]}
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-2 h-2 bg-sky-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-gray-700">
-                          {service.keyBenefits[3]}
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {category.items.map((item) => (
+                    <div
+                      key={item.title}
+                      className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                    >
+                      <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <item.icon className="h-6 w-6 text-white" />
+                      </div>
+                      <h4 className="text-lg font-semibold text-black mb-2">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}

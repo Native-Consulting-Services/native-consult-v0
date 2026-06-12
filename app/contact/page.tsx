@@ -192,7 +192,13 @@ export default function ContactPage() {
                     <h3 className="text-lg font-semibold text-black mb-1">
                       Location
                     </h3>
-                    <p className="text-gray-700">New Orleans, Louisiana</p>
+                    <p className="text-gray-700">
+                      Native Consulting Services, LLC
+                      <br />
+                      250 Holiday Blvd.
+                      <br />
+                      Covington, LA 70433
+                    </p>
                     <p className="text-sm text-gray-600 mt-1">
                       Serving Tribal Governments nationwide
                     </p>
