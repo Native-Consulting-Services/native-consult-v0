@@ -231,13 +231,13 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-600 to-sky-400 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-700 text-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">
               Our Services
             </h1>
-            <p className="text-xl md:text-2xl text-teal-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto">
               From a single secure portal to AI-driven automation across your
               whole organization — built with security, compliance, and your
               success in mind.
@@ -250,7 +250,7 @@ export default function ServicesPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-6">
               Built for Range
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
@@ -263,8 +263,8 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <Shield className="h-12 w-12 text-sky-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <Shield className="h-12 w-12 text-sky-700 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Security First
               </h3>
               <p className="text-gray-600">
@@ -274,8 +274,8 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <Cloud className="h-12 w-12 text-sky-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <Cloud className="h-12 w-12 text-sky-700 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Sovereign Cloud Infrastructure
               </h3>
               <p className="text-gray-600">
@@ -285,8 +285,8 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <Sparkles className="h-12 w-12 text-sky-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <Sparkles className="h-12 w-12 text-sky-700 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 AI-Powered Automation
               </h3>
               <p className="text-gray-600">
@@ -299,20 +299,20 @@ export default function ServicesPage() {
       </section>
 
       {/* Chukfi CMS Featured Section */}
-      <section className="py-16 bg-gradient-to-br from-sky-50 to-teal-50">
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-sky-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-xl border-2 border-sky-200 p-8 md:p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center mb-6">
-                  <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
+                  <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
                     <Rabbit className="h-8 w-8 text-white" />
                   </div>
                   <div>
-                    <span className="inline-block text-xs font-semibold uppercase tracking-wide text-sky-600 mb-1">
+                    <span className="inline-block text-xs font-semibold uppercase tracking-wide text-sky-700 mb-1">
                       NCS Open-Source Platform
                     </span>
-                    <h3 className="text-2xl md:text-3xl font-bold text-black">
+                    <h3 className="text-2xl md:text-3xl font-bold text-slate-900">
                       Chukfi CMS
                     </h3>
                   </div>
@@ -332,13 +332,13 @@ export default function ServicesPage() {
               </div>
 
               <div className="bg-gray-50 p-8 rounded-lg">
-                <h4 className="text-xl font-semibold text-black mb-4">
+                <h4 className="text-xl font-semibold text-slate-900 mb-4">
                   Platform Capabilities
                 </h4>
                 <ul className="space-y-3">
                   {chukfiCapabilities.map((capability, idx) => (
                     <li key={idx} className="flex items-start">
-                      <div className="w-2 h-2 bg-sky-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-sky-700 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 text-sm">
                         {capability}
                       </span>
@@ -358,7 +358,7 @@ export default function ServicesPage() {
             {categories.map((category) => (
               <div key={category.title}>
                 <div className="mb-8">
-                  <h3 className="text-2xl md:text-3xl font-bold text-black mb-3">
+                  <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
                     {category.title}
                   </h3>
                   <p className="text-lg text-gray-600 max-w-3xl">
@@ -372,10 +372,10 @@ export default function ServicesPage() {
                       key={item.title}
                       className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
                     >
-                      <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                      <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                         <item.icon className="h-6 w-6 text-white" />
                       </div>
-                      <h4 className="text-lg font-semibold text-black mb-2">
+                      <h4 className="text-lg font-semibold text-slate-900 mb-2">
                         {item.title}
                       </h4>
                       <p className="text-gray-600 text-sm leading-relaxed">
@@ -391,18 +391,18 @@ export default function ServicesPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-sky-600 to-sky-400 text-white">
+      <section className="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-sky-700 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl mb-8 text-teal-100 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 text-slate-300 max-w-3xl mx-auto">
             Let's discuss your specific requirements and how our secure
             development practices can benefit your organization.
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-3 bg-white text-sky-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+            className="inline-flex items-center px-8 py-3 bg-white text-slate-900 font-semibold rounded-lg hover:bg-slate-100 transition-all duration-300 transform hover:scale-105"
           >
             Contact Us Today
           </a>

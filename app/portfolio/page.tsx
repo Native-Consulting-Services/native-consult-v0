@@ -117,13 +117,13 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-600 to-sky-400 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-700 text-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">
               Our Portfolio
             </h1>
-            <p className="text-xl md:text-2xl text-teal-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto">
               Showcasing successful projects that have transformed operations
               for Tribal Governments and organizations with secure, compliant
               technology solutions.
@@ -137,19 +137,19 @@ export default function PortfolioPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-sky-600 mb-2">3+</div>
+              <div className="text-3xl font-bold text-sky-700 mb-2">3+</div>
               <div className="text-gray-600">Completed Projects</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-sky-600 mb-2">100%</div>
+              <div className="text-3xl font-bold text-sky-700 mb-2">100%</div>
               <div className="text-gray-600">Client Satisfaction</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-sky-600 mb-2">60%</div>
+              <div className="text-3xl font-bold text-sky-700 mb-2">60%</div>
               <div className="text-gray-600">Avg. Efficiency Improvement</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-sky-600 mb-2">24/7</div>
+              <div className="text-3xl font-bold text-sky-700 mb-2">24/7</div>
               <div className="text-gray-600">Support & Maintenance</div>
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function PortfolioPage() {
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Featured Projects
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -180,7 +180,7 @@ export default function PortfolioPage() {
                 {/* Project Image */}
                 <div className={`${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
                   <div className="relative group">
-                    <div className="bg-gradient-to-br from-sky-600 to-sky-400 p-1 rounded-lg">
+                    <div className="bg-sky-700 p-1 rounded-lg">
                       <Image
                         src={project.image || "/placeholder.svg"}
                         alt={project.title}
@@ -189,7 +189,7 @@ export default function PortfolioPage() {
                         className="w-full h-auto rounded-lg"
                       />
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-br from-sky-600/20 to-sky-400/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-sky-700/10 to-slate-900/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 </div>
 
@@ -203,7 +203,7 @@ export default function PortfolioPage() {
                     {project.categories.map((category, idx) => (
                       <span
                         key={idx}
-                        className="bg-sky-600/10 text-sky-600 px-3 py-1 rounded-full text-sm font-medium"
+                        className="bg-sky-50 text-sky-700 px-3 py-1 rounded-full text-sm font-medium"
                       >
                         {category}
                       </span>
@@ -213,10 +213,10 @@ export default function PortfolioPage() {
                     </span>
                   </div>
 
-                  <h3 className="text-2xl md:text-3xl font-bold text-black mb-2">
+                  <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-lg text-sky-600 font-semibold mb-4">
+                  <p className="text-lg text-sky-700 font-semibold mb-4">
                     {project.subtitle}
                   </p>
                   <p className="text-gray-600 mb-6 leading-relaxed">
@@ -225,13 +225,13 @@ export default function PortfolioPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                     <div className="flex items-center space-x-2">
-                      <Calendar className="h-5 w-5 text-sky-600" />
+                      <Calendar className="h-5 w-5 text-sky-700" />
                       <span className="text-sm text-gray-600">
                         Duration: {project.duration}
                       </span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <Users className="h-5 w-5 text-sky-600" />
+                      <Users className="h-5 w-5 text-sky-700" />
                       <Link
                         href={project.clientLink}
                         passHref
@@ -267,7 +267,7 @@ export default function PortfolioPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold transition-colors cursor-pointer">
+                    <button className="inline-flex items-center text-sky-700 hover:text-sky-800 font-semibold transition-colors cursor-pointer">
                       View Project
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </button>
@@ -283,7 +283,7 @@ export default function PortfolioPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Project Categories
             </h2>
             <p className="text-lg text-gray-600">
@@ -293,46 +293,46 @@ export default function PortfolioPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-gradient-to-br from-sky-600/5 to-sky-400/5 rounded-lg border border-sky-600/10">
-              <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-6 bg-gradient-to-br from-sky-50 to-slate-50 rounded-lg border border-sky-200">
+              <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Government Services
               </h3>
               <p className="text-gray-600 mb-4">
                 Secure portals and applications for government departments with
                 strict compliance requirements.
               </p>
-              <div className="text-sm text-sky-600 font-medium">4 Projects</div>
+              <div className="text-sm text-sky-700 font-medium">4 Projects</div>
             </div>
 
-            <div className="text-center p-6 bg-gradient-to-br from-sky-600/5 to-sky-400/5 rounded-lg border border-sky-600/10">
-              <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-6 bg-gradient-to-br from-sky-50 to-slate-50 rounded-lg border border-sky-200">
+              <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Database className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Social Services
               </h3>
               <p className="text-gray-600 mb-4">
                 Application systems and case management tools for social service
                 programs and family assistance.
               </p>
-              <div className="text-sm text-sky-600 font-medium">2 Projects</div>
+              <div className="text-sm text-sky-700 font-medium">2 Projects</div>
             </div>
 
-            <div className="text-center p-6 bg-gradient-to-br from-sky-600/5 to-sky-400/5 rounded-lg border border-sky-600/10">
-              <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-6 bg-gradient-to-br from-sky-50 to-slate-50 rounded-lg border border-sky-200">
+              <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Globe className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Cultural Events
               </h3>
               <p className="text-gray-600 mb-4">
                 Engaging digital experiences and platforms for cultural events
                 and festivals.
               </p>
-              <div className="text-sm text-sky-600 font-medium">1 Project</div>
+              <div className="text-sm text-sky-700 font-medium">1 Project</div>
             </div>
           </div>
         </div>
@@ -342,7 +342,7 @@ export default function PortfolioPage() {
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Technologies & Expertise
             </h2>
             <p className="text-lg text-gray-600">
@@ -353,8 +353,8 @@ export default function PortfolioPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <Code className="h-12 w-12 text-sky-600 mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <Code className="h-12 w-12 text-sky-700 mb-4" />
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Frontend Development
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -362,7 +362,7 @@ export default function PortfolioPage() {
                   (tech, idx) => (
                     <span
                       key={idx}
-                      className="bg-sky-600/10 text-sky-600 px-2 py-1 rounded text-sm"
+                      className="bg-sky-50 text-sky-700 px-2 py-1 rounded text-sm"
                     >
                       {tech}
                     </span>
@@ -372,8 +372,8 @@ export default function PortfolioPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <Database className="h-12 w-12 text-sky-600 mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <Database className="h-12 w-12 text-sky-700 mb-4" />
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Backend & Database
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -381,7 +381,7 @@ export default function PortfolioPage() {
                   (tech, idx) => (
                     <span
                       key={idx}
-                      className="bg-sky-600/10 text-sky-600 px-2 py-1 rounded text-sm"
+                      className="bg-sky-50 text-sky-700 px-2 py-1 rounded text-sm"
                     >
                       {tech}
                     </span>
@@ -391,8 +391,8 @@ export default function PortfolioPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <Globe className="h-12 w-12 text-sky-600 mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <Globe className="h-12 w-12 text-sky-700 mb-4" />
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Cloud & Security
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -404,7 +404,7 @@ export default function PortfolioPage() {
                 ].map((tech, idx) => (
                   <span
                     key={idx}
-                    className="bg-sky-600/10 text-sky-600 px-2 py-1 rounded text-sm"
+                    className="bg-sky-50 text-sky-700 px-2 py-1 rounded text-sm"
                   >
                     {tech}
                   </span>
@@ -419,7 +419,7 @@ export default function PortfolioPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Measurable Impact
             </h2>
             <p className="text-lg text-gray-600">
@@ -429,26 +429,26 @@ export default function PortfolioPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 bg-gradient-to-br from-sky-600/10 to-sky-400/10 rounded-lg">
-              <div className="text-4xl font-bold text-sky-600 mb-2">60%</div>
+            <div className="text-center p-6 bg-gradient-to-br from-sky-50 to-slate-50 rounded-lg">
+              <div className="text-4xl font-bold text-sky-700 mb-2">60%</div>
               <div className="text-gray-600">
                 Average Processing Time Reduction
               </div>
             </div>
-            <div className="text-center p-6 bg-gradient-to-br from-sky-600/10 to-sky-400/10 rounded-lg">
-              <div className="text-4xl font-bold text-sky-600 mb-2">40%</div>
+            <div className="text-center p-6 bg-gradient-to-br from-sky-50 to-slate-50 rounded-lg">
+              <div className="text-4xl font-bold text-sky-700 mb-2">40%</div>
               <div className="text-gray-600">
                 Increase in Application Completion
               </div>
             </div>
-            <div className="text-center p-6 bg-gradient-to-br from-sky-600/10 to-sky-400/10 rounded-lg">
-              <div className="text-4xl font-bold text-sky-600 mb-2">35%</div>
+            <div className="text-center p-6 bg-gradient-to-br from-sky-50 to-slate-50 rounded-lg">
+              <div className="text-4xl font-bold text-sky-700 mb-2">35%</div>
               <div className="text-gray-600">
                 Reduction in Administrative Costs
               </div>
             </div>
-            <div className="text-center p-6 bg-gradient-to-br from-sky-600/10 to-sky-400/10 rounded-lg">
-              <div className="text-4xl font-bold text-sky-600 mb-2">100%</div>
+            <div className="text-center p-6 bg-gradient-to-br from-sky-50 to-slate-50 rounded-lg">
+              <div className="text-4xl font-bold text-sky-700 mb-2">100%</div>
               <div className="text-gray-600">Compliance Achievement Rate</div>
             </div>
           </div>
@@ -456,18 +456,18 @@ export default function PortfolioPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-sky-600 to-sky-400 text-white">
+      <section className="py-16 bg-gradient-to-r from-slate-900 via-slate-800 to-sky-700 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
             Ready to Start Your Next Project?
           </h2>
-          <p className="text-xl mb-8 text-teal-100 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 text-slate-300 max-w-3xl mx-auto">
             Let's discuss how we can help you achieve similar results with a
             custom solution tailored to your specific needs and compliance
             requirements.
           </p>
           <Link href="/contact">
-            <button className="inline-flex items-center px-8 py-3 bg-white text-sky-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+            <button className="inline-flex items-center px-8 py-3 bg-white text-slate-900 font-semibold rounded-lg hover:bg-slate-100 transition-all duration-300 transform hover:scale-105">
               Start Your Project
               <ArrowRight className="ml-2 h-5 w-5" />
             </button>

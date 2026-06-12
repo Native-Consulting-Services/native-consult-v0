@@ -22,10 +22,10 @@ export default function Footer() {
                 Native Consulting Services
               </span>
             </div>
-            <p className="text-neutral-gray-300 mb-4">
+            <p className="text-slate-300 mb-4">
               Your Native Partner In Software Solutions
             </p>
-            <p className="text-sm text-neutral-gray-400">
+            <p className="text-sm text-slate-400">
               Specializing in secure, custom software solutions for Tribal
               Governments and organizations requiring high compliance standards.
             </p>
@@ -38,7 +38,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
+                  className="text-slate-300 hover:text-sky-400 transition-colors"
                 >
                   About
                 </Link>
@@ -46,7 +46,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
+                  className="text-slate-300 hover:text-sky-400 transition-colors"
                 >
                   Services
                 </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/pricing"
-                  className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
+                  className="text-slate-300 hover:text-sky-400 transition-colors"
                 >
                   Pricing
                 </Link>
@@ -62,7 +62,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/portfolio"
-                  className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
+                  className="text-slate-300 hover:text-sky-400 transition-colors"
                 >
                   Portfolio
                 </Link>
@@ -70,7 +70,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
+                  className="text-slate-300 hover:text-sky-400 transition-colors"
                 >
                   Contact
                 </Link>
@@ -83,19 +83,19 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <Mail className="h-5 w-5 text-primary-teal" />
+                <Mail className="h-5 w-5 text-sky-400" />
                 <a
                   href="mailto:info@nativeconsult.io"
-                  className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
+                  className="text-slate-300 hover:text-sky-400 transition-colors"
                 >
                   info@nativeconsult.io
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <Linkedin className="h-5 w-5 text-primary-teal" />
+                <Linkedin className="h-5 w-5 text-sky-400" />
                 <a
                   href="https://www.linkedin.com/company/native-consulting-services/"
-                  className="text-neutral-gray-300 hover:text-primary-teal transition-colors"
+                  className="text-slate-300 hover:text-sky-400 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -103,8 +103,8 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-start space-x-2">
-                <MapPin className="h-5 w-5 text-primary-teal mt-0.5" />
-                <span className="text-neutral-gray-300">
+                <MapPin className="h-5 w-5 text-sky-400 mt-0.5" />
+                <span className="text-slate-300">
                   Native Consulting Services, LLC
                   <br />
                   250 Holiday Blvd.
@@ -116,9 +116,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-neutral-gray-700">
+        <div className="mt-8 pt-8 border-t border-slate-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-neutral-gray-400">
+            <p className="text-sm text-slate-400">
               © {new Date().getFullYear()} Native Consulting Services. All
               rights reserved.
             </p>
@@ -126,13 +126,13 @@ export default function Footer() {
             {/* <div className="mt-4 md:mt-0 flex space-x-6">
               <a
                 href="#"
-                className="text-neutral-gray-400 hover:text-primary-teal transition-colors"
+                className="text-slate-400 hover:text-sky-400 transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="text-neutral-gray-400 hover:text-primary-teal transition-colors"
+                className="text-slate-400 hover:text-sky-400 transition-colors"
               >
                 Terms of Service
               </a>

@@ -33,7 +33,7 @@ export default function Header() {
                 height={32}
                 className="h-8 w-auto"
               />
-              <span className="text-xl font-bold text-neutral-black">
+              <span className="text-xl font-serif font-bold text-slate-900">
                 Native Consulting Services
               </span>
             </Link>
@@ -48,8 +48,8 @@ export default function Header() {
                   href={item.href}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     pathname === item.href
-                      ? "bg-gradient-to-br from-sky-600 to-sky-400 text-white"
-                      : "text-neutral-gray-700 hover:bg-sky-600 hover:text-white"
+                      ? "bg-slate-900 text-white"
+                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                   }`}
                 >
                   {item.name}
@@ -64,7 +64,7 @@ export default function Header() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-neutral-gray-700"
+              className="text-slate-700"
             >
               <span className="sr-only">Open main menu</span>
               {isMenuOpen ? (
@@ -86,8 +86,8 @@ export default function Header() {
                   href={item.href}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     pathname === item.href
-                      ? "bg-sky-600 text-white"
-                      : "text-neutral-gray-700 hover:bg-sky-600 hover:text-white"
+                      ? "bg-slate-900 text-white"
+                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

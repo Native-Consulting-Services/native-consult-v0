@@ -4,13 +4,13 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-600 to-sky-400 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-700 text-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">
               About Native Consulting Services
             </h1>
-            <p className="text-xl md:text-2xl text-teal-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto">
               A Native-owned business dedicated to providing secure, compliant
               software solutions for Tribal Governments and regulated
               organizations.
@@ -24,10 +24,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-black mb-6">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                 Who We Are
               </h2>
-              <p className="text-lg text-neutral-gray-700 mb-6 leading-relaxed">
+              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                 Native Consulting Services is a Native-owned technology
                 consulting firm specializing in secure software solutions for
                 Tribal Governments and organizations with stringent compliance
@@ -35,13 +35,13 @@ export default function AboutPage() {
                 Native communities and regulated entities in today's digital
                 landscape.
               </p>
-              <p className="text-lg text-neutral-gray-700 mb-6 leading-relaxed">
+              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                 Our team combines deep technical expertise with cultural
                 understanding and regulatory knowledge to deliver solutions that
                 not only meet your functional requirements but also respect your
                 values and comply with the highest security standards.
               </p>
-              <p className="text-lg text-neutral-gray-700 leading-relaxed">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 As a Native-owned business, we are committed to supporting the
                 sovereignty and self-determination of Tribal Nations through
                 technology that empowers and protects.
@@ -49,31 +49,31 @@ export default function AboutPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-sky-600 to-sky-400 p-6 rounded-lg text-white text-center">
+              <div className="bg-sky-700 p-6 rounded-lg text-white text-center">
                 <Users className="h-12 w-12 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Native-Owned</h3>
-                <p className="text-sm text-teal-100">
+                <p className="text-sm text-slate-300">
                   Proudly Native-owned and operated
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-sky-400 to-sky-600 p-6 rounded-lg text-white text-center">
+              <div className="bg-slate-900 p-6 rounded-lg text-white text-center">
                 <Shield className="h-12 w-12 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Security Focused</h3>
-                <p className="text-sm text-teal-100">
+                <p className="text-sm text-slate-300">
                   Compliance and security first approach
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-sky-600 to-sky-400 p-6 rounded-lg text-white text-center">
+              <div className="bg-slate-900 p-6 rounded-lg text-white text-center">
                 <Target className="h-12 w-12 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Mission Driven</h3>
-                <p className="text-sm text-teal-100">
+                <p className="text-sm text-slate-300">
                   Committed to empowering communities
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-sky-400 to-sky-600 p-6 rounded-lg text-white text-center">
+              <div className="bg-sky-700 p-6 rounded-lg text-white text-center">
                 <Award className="h-12 w-12 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Excellence</h3>
-                <p className="text-sm text-teal-100">
+                <p className="text-sm text-slate-300">
                   Delivering exceptional results
                 </p>
               </div>
@@ -86,14 +86,14 @@ export default function AboutPage() {
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-6">
               Our Mission
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-slate-900 mb-4">
                 Digitize & Streamline
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -106,7 +106,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold text-black mb-4">
+              <h3 className="text-2xl font-semibold text-slate-900 mb-4">
                 Empower Through Technology
               </h3>
               <p className="text-gray-700 leading-relaxed">
@@ -125,7 +125,7 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-6">
               Our Core Values
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -136,39 +136,39 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-neutral-black mb-3">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Security & Compliance
               </h3>
-              <p className="text-neutral-gray-600">
+              <p className="text-slate-600">
                 We never compromise on security. Every solution is built with
                 compliance and data protection as fundamental requirements.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-neutral-black mb-3">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Cultural Respect
               </h3>
-              <p className="text-neutral-gray-600">
+              <p className="text-slate-600">
                 We honor and respect the sovereignty, traditions, and unique
                 needs of the communities we serve.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-neutral-black mb-3">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Excellence
               </h3>
-              <p className="text-neutral-gray-600">
+              <p className="text-slate-600">
                 We are committed to delivering exceptional quality in every
                 project, exceeding expectations and building lasting
                 partnerships.

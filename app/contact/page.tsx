@@ -14,11 +14,11 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-600 to-sky-400 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-700 text-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl md:text-2xl text-teal-100 max-w-3xl mx-auto">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+            <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto">
               Ready to transform your operations with secure, compliant software
               solutions? Let's start the conversation.
             </p>
@@ -33,7 +33,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             {state.succeeded ? (
               <div className="animate-fade-in">
-                <h2 className="text-3xl font-bold text-black mb-6">
+                <h2 className="font-serif text-3xl font-bold text-slate-900 mb-6">
                   Thank You!
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
@@ -43,7 +43,7 @@ export default function ContactPage() {
               </div>
             ) : (
               <div className="animate-slide-up">
-                <h2 className="text-3xl font-bold text-black mb-6">
+                <h2 className="font-serif text-3xl font-bold text-slate-900 mb-6">
                   Get In Touch
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
@@ -122,7 +122,7 @@ export default function ContactPage() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-sky-600 to-sky-400 hover:from-sky-500 hover:to-sky-300 text-white font-semibold py-3 transition-all duration-300"
+                    className="w-full bg-sky-700 hover:bg-sky-800 text-white font-semibold py-3 transition-all duration-300"
                   >
                     Send Message
                     <Send className="ml-2 h-5 w-5" />
@@ -133,7 +133,7 @@ export default function ContactPage() {
 
             {/* Contact Information */}
             <div className="animate-slide-up">
-              <h2 className="text-3xl font-bold text-black mb-6">
+              <h2 className="font-serif text-3xl font-bold text-slate-900 mb-6">
                 Contact Information
               </h2>
               <p className="text-lg text-gray-600 mb-8">
@@ -143,16 +143,16 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-black mb-1">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-1">
                       Email
                     </h3>
                     <a
                       href="mailto:info@nativeconsult.io"
-                      className="text-primary-teal hover:text-primary-teal-dark transition-colors"
+                      className="text-sky-700 hover:text-sky-800 transition-colors"
                     >
                       info@nativeconsult.io
                     </a>
@@ -163,16 +163,16 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Linkedin className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-black mb-1">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-1">
                       LinkedIn
                     </h3>
                     <a
                       href="https://www.linkedin.com/company/native-consulting-services/"
-                      className="text-primary-teal hover:text-primary-teal-dark transition-colors"
+                      className="text-sky-700 hover:text-sky-800 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -185,11 +185,11 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-gradient-to-br from-sky-600 to-sky-400 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-black mb-1">
+                    <h3 className="text-lg font-semibold text-slate-900 mb-1">
                       Location
                     </h3>
                     <p className="text-gray-700">
@@ -207,32 +207,32 @@ export default function ContactPage() {
               </div>
 
               {/* Additional Info */}
-              <div className="mt-12 p-6 bg-gradient-to-br from-primary-teal/10 to-primary-sky-blue/10 rounded-lg border border-primary-teal/20">
-                <h3 className="text-xl font-semibold text-black mb-4">
+              <div className="mt-12 p-6 bg-gradient-to-br from-sky-50 to-slate-100 rounded-lg border border-sky-200">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">
                   Why Choose Native Consulting Services?
                 </h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-primary-teal rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-sky-700 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span>
                       Native-owned business with cultural understanding
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-primary-teal rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-sky-700 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span>
                       Expertise in AWS GovCloud and IRS Publication 1075
                       compliance
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-primary-teal rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-sky-700 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span>
                       Proven track record with Tribal Government projects
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-2 h-2 bg-primary-teal rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-sky-700 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span>Security-first development approach</span>
                   </li>
                 </ul>
@@ -246,17 +246,17 @@ export default function ContactPage() {
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-black mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-6">
               Frequently Asked Questions
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-neutral-black mb-3">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">
                 What makes your solutions compliant with IRS Publication 1075?
               </h3>
-              <p className="text-neutral-gray-600">
+              <p className="text-slate-600">
                 We implement comprehensive security controls including
                 encryption, access controls, audit trails, and secure hosting
                 environments that meet or exceed IRS Publication 1075
@@ -265,10 +265,10 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-neutral-black mb-3">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">
                 How long does a typical project take?
               </h3>
-              <p className="text-neutral-gray-600">
+              <p className="text-slate-600">
                 Project timelines vary based on complexity and requirements.
                 Simple applications may take 2-3 months, while comprehensive
                 systems like our MBCI projects typically require 4-6 months from
@@ -277,10 +277,10 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-neutral-black mb-3">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">
                 Do you provide ongoing support and maintenance?
               </h3>
-              <p className="text-neutral-gray-600">
+              <p className="text-slate-600">
                 Yes, we offer comprehensive support and maintenance packages
                 including security updates, performance monitoring, user
                 support, and feature enhancements to ensure your system
@@ -289,10 +289,10 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-neutral-black mb-3">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">
                 Can you work with our existing systems?
               </h3>
-              <p className="text-neutral-gray-600">
+              <p className="text-slate-600">
                 Absolutely. We specialize in creating solutions that integrate
                 seamlessly with existing systems while maintaining security and
                 compliance standards. We can work with legacy databases,

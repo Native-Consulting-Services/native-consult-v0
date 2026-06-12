@@ -6,13 +6,13 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-sky-600 to-sky-400 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-sky-700 text-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">
               How We Price Projects
             </h1>
-            <p className="text-xl md:text-2xl text-teal-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto">
               Every engagement is scoped and priced around your project — from
               a focused tool delivered in weeks to a multi-system platform
               built over months.
@@ -25,7 +25,7 @@ export default function PricingPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Fixed-Fee, Milestone-Based Engagements
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -37,8 +37,8 @@ export default function PricingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <Shield className="h-12 w-12 text-sky-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <Shield className="h-12 w-12 text-sky-700 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Fixed-Fee Milestones
               </h3>
               <p className="text-gray-600">
@@ -47,8 +47,8 @@ export default function PricingPage() {
               </p>
             </div>
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <Lock className="h-12 w-12 text-sky-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <Lock className="h-12 w-12 text-sky-700 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 Infrastructure Included
               </h3>
               <p className="text-gray-600">
@@ -57,8 +57,8 @@ export default function PricingPage() {
               </p>
             </div>
             <div className="text-center p-6 bg-gray-50 rounded-lg">
-              <Award className="h-12 w-12 text-sky-600 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-3">
+              <Award className="h-12 w-12 text-sky-700 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 You Own What We Build
               </h3>
               <p className="text-gray-600">
@@ -75,7 +75,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
             <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">
                 Custom Pricing for Your Needs
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -86,37 +86,37 @@ export default function PricingPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-gradient-to-br from-sky-400/10 to-sky-600/10 p-6 rounded-lg border border-teal-500/20">
-                <h3 className="text-xl font-semibold text-black mb-4">
+              <div className="bg-gradient-to-br from-sky-50 to-slate-100 p-6 rounded-lg border border-sky-200">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">
                   What Affects Pricing?
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Project complexity and scope
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Number of users and departments
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Compliance and security requirements
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Integration with existing systems
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Timeline and delivery requirements
                     </span>
@@ -124,37 +124,37 @@ export default function PricingPage() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-sky-400/10 to-sky-600/10 p-6 rounded-lg border border-teal-500/20">
-                <h3 className="text-xl font-semibold text-black mb-4">
+              <div className="bg-gradient-to-br from-sky-50 to-slate-100 p-6 rounded-lg border border-sky-200">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">
                   What You'll Receive
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Detailed project proposal and timeline
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Transparent pricing breakdown
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Compliance and security assessment
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Risk analysis and mitigation plan
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-teal-500 mt-0.5 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-sky-700 mt-0.5 mr-3 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">
                       Post-launch support options
                     </span>
@@ -167,7 +167,7 @@ export default function PricingPage() {
               <Link href="/contact">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-sky-400 to-sky-500 hover:from-sky-500 hover:to-sky-700 text-white font-semibold px-8 py-4 transition-all duration-300 transform hover:scale-105"
+                  className="bg-sky-700 hover:bg-sky-800 text-white font-semibold px-8 py-4 transition-all duration-300 transform hover:scale-105"
                 >
                   Get Your Custom Quote Today
                   <ArrowRight className="ml-2 h-6 w-6" />
@@ -185,7 +185,7 @@ export default function PricingPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Why Organizations Choose NCS
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -196,10 +196,10 @@ export default function PricingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-gradient-to-br from-sky-400 to-sky-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-black mb-3">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">
                 Security First
               </h3>
               <p className="text-gray-600 text-sm">
@@ -209,10 +209,10 @@ export default function PricingPage() {
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-sky-400 to-sky-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-black mb-3">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">
                 Native-Owned
               </h3>
               <p className="text-gray-600 text-sm">
@@ -222,10 +222,10 @@ export default function PricingPage() {
             </div>
 
             <div className="text-center">
-              <div className="bg-gradient-to-br from-sky-400 to-sky-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-gradient-to-br from-sky-500 to-sky-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-black mb-3">
+              <h3 className="text-lg font-semibold text-slate-900 mb-3">
                 Proven Results
               </h3>
               <p className="text-gray-600 text-sm">
